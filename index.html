@@ -3,6 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="./static/neb.js"></script>
+    <script src="./static/nebPay.js"></script>
+    <script src="./static/nebulas.js"></script>
+    <script>
+    var dappAddress = "n1qHxkMoB41wUx8ZPQ6gJUFCxb1Wrb2bg4N";
+    var hash = "dca3d14d349d03d84f0ff9d9f6626da68da827056df341a0957a44814293748a";
+    var NebPay = require("nebpay");
+    var nebPay = new NebPay();
+    var HttpRequest = require("nebulas").HttpRequest;
+    var Neb = require("nebulas").Neb;
+    var Account = require("nebulas").Account;
+    var Transaction = require("nebulas").Transaction;
+    var Unit = require("nebulas").Unit;
+    var neb = new Neb();
+    setTimeout(function(){
+      if (typeof webExtensionWallet === 'undefined') {
+        alert('星云钱包环境未运行，请安装钱包插件')
+      }
+    }, 500)
+    </script>
     <title>anon</title>
   </head>
   <body>
